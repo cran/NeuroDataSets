@@ -9,6 +9,13 @@ library(NeuroDataSets)
 library(dplyr)
 library(ggplot2)
 
+## ----NeuroDataSets-datasets,echo = TRUE,message = FALSE,warning = FALSE,results = 'markup'----
+
+
+view_datasets_NeuroDataSets()
+
+
+
 ## ----patterns-subcortical-plot, fig.width=6, fig.height=4, out.width="100%"----
 
 # Convert the dataset to long format using only base R + dplyr
