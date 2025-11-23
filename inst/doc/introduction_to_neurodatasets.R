@@ -49,7 +49,7 @@ ggplot(long_data, aes(x = Condition, y = Subcortical, fill = Value)) +
 ## ----white-matter-plot, fig.width=6, fig.height=4.5, out.width="90%"----------
 
 # Compute mean values using updated anonymous function syntax
-summary_data <- white_matter_patterns_tbl_df %>%
+summary_data <- WMpatterns_tbl_df %>%
   select(-WM) %>%
   summarise(across(everything(), \(x) mean(x, na.rm = TRUE))) %>%
   as.data.frame()
